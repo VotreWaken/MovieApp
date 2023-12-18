@@ -1,0 +1,219 @@
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    *:focus {
+        outline: none;
+    }
+
+body {
+    background: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 24px;
+}
+
+    ul li:hover {
+        background: #13141C;
+        border-radius: 20px;
+    }
+
+    ul li img {
+        margin-right: 20px;
+    }
+
+button {
+    background: #262837;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.leftBar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1E202C;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.leftBarLogo {
+    width: 60%;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.searchSection {
+    display: flex;
+    align-items: center;
+    background: #262837;
+    border-radius: 15px;
+    width: 200px;
+    height: 60px;
+}
+
+.searchInput {
+    border-radius: 15px;
+    border: none;
+    height: 60px;
+    color: white;
+    text-align: center;
+    background: #262837;
+}
+
+.watchList {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    height: 60px;
+}
+
+.watchListButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+}
+
+.rightBar {
+    width: 80%;
+    margin-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.profileInformation {
+    display: flex;
+    width: 180px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.HeaderFilmImage {
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.newSeriesItem {
+    width: 24%;
+}
+
+.newSeriesContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+
+.newSeriesItem .newSeriesItemImage {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.newSeriesItemDescription {
+    background: #101118;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.newSeriesItemInformation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newSeriesItemWatchingInformation {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.newSeriesItemInformation button {
+    width: 25%;
+}
+
+
+
+
+/* filmContent */
+
+.filmItem {
+    display: flex;
+    font-size: 24px;
+    margin: 20px;
+}
+
+    .filmItem img {
+        cursor: pointer;
+    }
+
+.filmContentTitle {
+    font-size: 36px;
+}
+
+.filmContent {
+    margin-left: 60px;
+}
+
+.filmContentDescription {
+    margin-top: 40px;
+}
+
+.filmContentDirector {
+    margin: 20px 0px 20px 0px;
+}
+
+.filmContentGenre {
+    margin: 20px 0px 20px 0px;
+}

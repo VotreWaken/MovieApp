@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <div class="container">
+        <div class="leftBar">
+            <img class="leftBarLogo" draggable="false" src="/img/LeftBar/Logo.svg" alt="">
+            <ul>
+                <li>
+                    <img src="/img/LeftBar/HomeImage.svg" alt="">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <img src="/img/LeftBar/TrendingImage.svg" alt="">
+                    <a href="/Trending.html">Trending</a>
+                </li>
+                <li>
+                    <img src="/img/LeftBar/CategoryImage.svg" alt="">
+                    <a href="/Category.html">Category</a>
+                </li>
+                <li>
+                    <img src="/img/LeftBar/SettingsImage.svg" alt="">
+                    <a href="/MyTop.html">My Top</a>
+                </li>
+                <li>
+                    <img src="/img/LeftBar/SettingsImage.svg" alt="">
+                    <a href="/Settings.html">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightBar" id="rightBar">
+            @foreach (var movie in ViewBag.Movie)
+            {
+                <div class="filmItem">
+                    <img draggable="false" src="@($"{movie.FilmImage}")" width="300" alt="img">
+                    <div class="filmContent">
+                        <h1 class="filmContentTitle">@($"{movie.Id}. {movie.MovieTitle}")</h1>
+                        <p class="filmContentDescription">@movie.MovieDescription</p>
+                        <h3 class="filmContentDirector">Director: @movie.Director</h3>
+                        <h3 class="filmContentGenre">
+                            Genre:
+                            @foreach (var genre in movie.MovieGenres)
+                            {
+                                <span>@genre.Genre.GenreName</span>
+                            }
+                        </h3>
+                        <h4 class="filmContentProductionDate">Production Date: @movie.ProductionDate.ToString("yyyy")</h4>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>

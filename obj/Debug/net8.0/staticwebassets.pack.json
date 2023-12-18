@@ -1,0 +1,373 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MovieApplication.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MovieApplication.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Header\\Avatar.jpeg",
+      "PackagePath": "staticwebassets\\img\\Header\\Avatar.jpeg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Header\\SearchImage.svg",
+      "PackagePath": "staticwebassets\\img\\Header\\SearchImage.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Header\\WatchingList.svg",
+      "PackagePath": "staticwebassets\\img\\Header\\WatchingList.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\FirstSliderItem.png",
+      "PackagePath": "staticwebassets\\img\\Home\\FirstSliderItem.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\FourthSliderItem.png",
+      "PackagePath": "staticwebassets\\img\\Home\\FourthSliderItem.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\HeaderFilm.png",
+      "PackagePath": "staticwebassets\\img\\Home\\HeaderFilm.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\SecondSliderItem.png",
+      "PackagePath": "staticwebassets\\img\\Home\\SecondSliderItem.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\SliderItems\\SliderItemAddLogo.svg",
+      "PackagePath": "staticwebassets\\img\\Home\\SliderItems\\SliderItemAddLogo.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\SliderItems\\SliderItemWatchingLogo.svg",
+      "PackagePath": "staticwebassets\\img\\Home\\SliderItems\\SliderItemWatchingLogo.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Home\\ThirdSliderItem.png",
+      "PackagePath": "staticwebassets\\img\\Home\\ThirdSliderItem.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\CategoryImage.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\CategoryImage.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\HomeImage.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\HomeImage.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\Logo.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\Logo.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\Logo.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\SettingsImage.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\SettingsImage.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\TrendingImage.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\TrendingImage.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\Casablanca.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\Casablanca.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\CitizenKane.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\CitizenKane.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\ForrestGump.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\ForrestGump.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\GoneWithTheWind.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\GoneWithTheWind.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\Psycho.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\Psycho.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\PulpFiction.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\PulpFiction.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\RagingBull.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\RagingBull.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\TheGodFather.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\TheGodFather.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\TheShawshankRedemption.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\TheShawshankRedemption.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\TheWizardOfOz.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\TheWizardOfOz.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\Vertigo.png",
+      "PackagePath": "staticwebassets\\img\\MyTop\\Vertigo.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MovieApplication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MovieApplication.props",
+      "PackagePath": "build\\MovieApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MovieApplication.props",
+      "PackagePath": "buildMultiTargeting\\MovieApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MovieApplication.props",
+      "PackagePath": "buildTransitive\\MovieApplication.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
