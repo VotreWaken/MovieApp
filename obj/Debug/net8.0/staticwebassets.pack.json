@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MovieApplication.bundle.scp.css"
     },
     {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\css\\MyTop.css",
+      "PackagePath": "staticwebassets\\css\\MyTop.css"
+    },
+    {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -77,6 +81,14 @@
       "PackagePath": "staticwebassets\\img\\LeftBar\\TrendingImage.svg"
     },
     {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\burger-close.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\burger-close.svg"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\LeftBar\\burger-menu.svg",
+      "PackagePath": "staticwebassets\\img\\LeftBar\\burger-menu.svg"
+    },
+    {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\Casablanca.png",
       "PackagePath": "staticwebassets\\img\\MyTop\\Casablanca.png"
     },
@@ -119,6 +131,10 @@
     {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\MyTop\\Vertigo.png",
       "PackagePath": "staticwebassets\\img\\MyTop\\Vertigo.png"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\MyTop.js",
+      "PackagePath": "staticwebassets\\js\\MyTop.js"
     },
     {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\site.js",

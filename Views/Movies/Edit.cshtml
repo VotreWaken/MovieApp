@@ -1,0 +1,61 @@
+﻿@model MovieApplication.Models.Movie;
+<div class="rightBar" id="rightBar">
+    <form asp-action="Edit">
+    <div class="filmItem">
+        <div class="filmItemImage">
+        <img draggable="false" src="@Html.DisplayFor(model => model.FilmImage)" width="300" alt="img" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        <label asp-for="FilmImage" class="control-label">Film Image</label>
+        <input asp-for="FilmImage" class="form-control" />
+        </div>
+        <div class="filmContent">
+            <h1 class="filmContentTitle">@Html.DisplayFor(model => model.Id). @Html.DisplayFor(model => model.MovieTitle)</h1>
+            <label asp-for="MovieTitle" class="control-label">Title</label>
+            <input asp-for="MovieTitle" class="form-control" />
+            <label asp-for="MovieDescription" class="control-label">Description</label>
+            <input asp-for="MovieDescription" class="form-control" />
+            <label asp-for="Director" class="control-label">Director</label>
+            <input asp-for="Director" class="form-control" />
+            <div class="genre-buttons">
+                <div class="form-group">
+                    <label asp-for="MovieGenres" class="control-label">Genres</label>
+                    <select asp-for="MovieGenres" asp-items="@(new SelectList(ViewBag.AllGenres, "Id", "GenreName"))" class="form-control" multiple id="genreSelect"></select>
+                </div>
+            </div>
+            <label asp-for="ProductionDate" class="control-label">Production Date</label>
+            <input asp-for="ProductionDate" class="form-control" type="date" />
+        </div>
+    </div>
+    <div class="buttons">
+        <button type="submit" class="EditConfirmBtn">Confirm</button>
+        <button type="reset" class="EditDeclineBtn">Decline</button>
+    </div>
+</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Получите ссылку на ваш список выбора
+        var genreSelect = $('#genreSelect');
+        var selectedGenresInput = $('#selectedGenres');
+
+        // Обработка изменений в списке выбора
+        genreSelect.change(function () {
+            // Создайте массив для хранения выбранных значений
+            var selectedGenres = [];
+
+            // Переберите все выбранные элементы и добавьте их в массив
+            genreSelect.find(':selected').each(function () {
+                selectedGenres.push($(this).val());
+            });
+
+            // Обновите значение скрытого поля
+            selectedGenresInput.val(selectedGenres.join(','));
+
+            // Выведите выбранные значения в консоль (замените эту часть вашим кодом)
+            console.log(selectedGenres);
+        });
+    });
+</script>

@@ -1,0 +1,178 @@
+﻿
+
+@media (max-width: 1042px) {
+    .filmItem {
+        font-size: 18px;
+    }
+
+    .leftBar {
+        background: transparent;
+        width: 10%;
+        &.fixed__nav {
+    background: green;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 111;
+    }
+
+}
+
+.leftBar ul {
+    display: none;
+}
+
+.leftBarLogo {
+    display: none;
+}
+
+.leftBarItems.active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #1E1E1E;
+    z-index: 101 !important;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+ul li:first-child a {
+    width: auto;
+}
+
+.burger-menu {
+    display: block;
+    position: fixed;
+    width: 4%;
+    z-index: 102 !important;
+    &.active-burger
+
+{
+    &:before
+
+{
+    transform: rotate(45deg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+    top: 8px;
+}
+
+&:after {
+    background: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+    bottom: 10px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+}
+
+& span {
+    transform: scale(0);
+}
+
+}
+
+&:before, &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+}
+
+&:before {
+    top: 0;
+}
+
+&::after {
+    bottom: 0;
+}
+
+span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 100%;
+    background: white;
+    height: 2px;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+}
+
+}
+
+.container {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 894px) {
+
+    .filmItem {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .filmItem {
+        font-size: 18px;
+    }
+
+        .filmItem img {
+            width: 100%;
+            height: auto;
+        }
+
+    .filmContent {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 648px) {
+    .burger-menu {
+        width: 6%;
+    }
+}
+
+@media (max-width: 448px) {
+    .burger-menu {
+        width: 6%;
+        margin-left: 60px;
+    }
+}
+
+.filmContentEditBtn {
+    background: #13141C;
+    border-radius: 20px;
+    margin: 40px 0px 20px 0px;
+    width: 20%;
+    height: 10%;
+    font-size: 24px;
+}
+
+    .filmContentEditBtn:hover {
+        background: #13141C;
+        border-radius: 20px;
+    }
+
+
+.genre-buttons {
+    display: flex;
+    gap: 8px; /* Расстояние между кружками */
+}
+
+.genre-button {
+    background-color: #3498db; /* Цвет кружка */
+    color: #fff; /* Цвет текста внутри кружка */
+    border-radius: 50%; /* Делаем кружок */
+    padding: 4px 8px; /* Задаем отступы внутри кружка */
+}

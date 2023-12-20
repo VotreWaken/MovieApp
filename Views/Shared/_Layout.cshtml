@@ -7,25 +7,45 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MovieApplication.styles.css" asp-append-version="true" />
+    <script defer src="/js/MyTop.js"></script>
 </head>
 <body>
-@*     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                @Html.ActionLink("Index", "Index", "Home", null, new { @class = "navbar-brand" })
+    <div class="container">
+    <div class="leftBar">
+        <img class="burger-menu" src="/img/LeftBar/burger-menu.svg">
+        <img class="leftBarLogo" draggable="false" src="/img/LeftBar/Logo.svg" alt="">
+        <ul class="leftBarItems">
+            <li>
+                <img src="/img/LeftBar/HomeImage.svg" alt="">
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <img src="/img/LeftBar/TrendingImage.svg" alt="">
+                <a href="/Trending.html">Trending</a>
+            </li>
+            <li>
+                <img src="/img/LeftBar/CategoryImage.svg" alt="">
+                <a href="/Category.html">Category</a>
+            </li>
+            <li>
+                <img src="/img/LeftBar/SettingsImage.svg" alt="">
+                <a href="/MyTop.html">My Top</a>
+            </li>
+            <li>
+                <img src="/img/LeftBar/SettingsImage.svg" alt="">
+                <a href="/Settings.html">Add Film</a>
+            </li>
+        </ul>
+    </div>
 
-            </div>
-        </div>
-    </div> *@
-
-    <div class="container body-content">
+    
         @RenderBody()
 @*         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Core Application</p>
         </footer> *@
+    
     </div>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

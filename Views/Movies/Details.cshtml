@@ -1,0 +1,22 @@
+﻿@model MovieApplication.Models.Movie;
+<div class="rightBar" id="rightBar">
+<div class="filmItem">
+    <img draggable="false" src="@Html.DisplayFor(model => model.FilmImage)" width="300" alt="img" />
+
+    <div class="filmContent">
+        <h1 class="filmContentTitle">@Html.DisplayFor(model => model.Id). @Html.DisplayFor(model => model.MovieTitle)</h1>
+        <p class="filmContentDescription">@Html.DisplayFor(model => model.MovieDescription)</p>
+        <h3 class="filmContentDirector">Director: @Html.DisplayFor(model => model.Director)</h3>
+            <h3 class="filmContentGenre">Genre:</h3>
+            <div class="genre-buttons">
+                @foreach (var genre in Model.MovieGenres)
+                {
+                    <div class="genre-button">
+                        <span>@genre.Genre.GenreName</span>
+                    </div>
+                }
+            </div>
+        <h4 class="filmContentProductionDate">Production Date: @Html.Raw(Model.ProductionDate.ToString())</h4>
+    </div>
+    </div>
+</div>
