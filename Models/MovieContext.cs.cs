@@ -18,5 +18,16 @@ namespace MovieApplication.Models
             //    SaveChanges();
             //}
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MovieGenre>()
+                .HasKey(e => new { e.MovieId, e.GenreId });
+
+            // Другие конфигурации...
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

@@ -103,9 +103,9 @@ namespace MovieApplication.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate")] Movie student)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie)
         {
-            if (id != student.Id)
+            if (id != movie.Id)
             {
                 return NotFound();
             }
@@ -114,26 +114,23 @@ namespace MovieApplication.Controllers
             {
                 try
                 {
-                    //// Преобразуйте строковые значения в числовые (ID жанров)
-                    //var selectedGenres = movie.SelectedGenres.Split(',').Select(int.Parse);
+                    var selectedGenres = movie.SelectedGenres;
 
-                    //// Очистите существующие связи жанра с фильмом
-                    //db.MovieGenre.RemoveRange(db.MovieGenre.Where(mg => mg.MovieId == id));
+                    // Очистите существующие связи жанра с фильмом
+                    db.MovieGenre.RemoveRange(db.MovieGenre.Where(mg => mg.MovieId == id));
 
-                    //// Добавьте новые связи жанра
-                    //foreach (var genreId in selectedGenres)
-                    //{
-                    //    db.MovieGenre.Add(new MovieGenre { MovieId = id, GenreId = genreId });
-                    //}
+                    // Добавьте новые связи жанра
+                    foreach (var genreId in selectedGenres)
+                    {
+                        db.MovieGenre.Add(new MovieGenre { MovieId = id, GenreId = genreId });
+                    }
 
-
-
-                    db.Update(student);
+                    db.Update(movie);
                     await db.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StudentExists(student.Id))
+                    if (!StudentExists(movie.Id))
                     {
                         return NotFound();
                     }
@@ -144,7 +141,9 @@ namespace MovieApplication.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+
+            ViewBag.AllGenres = await db.Genre.ToListAsync();
+            return View(movie);
         }
         private bool StudentExists(int id)
         {

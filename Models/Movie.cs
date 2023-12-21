@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieApplication.Models
 {
     public class Movie
     {
         // Идентификатор фильма
+        [Key]
+        [Column("ID")]
         public int Id { get; set; }
         // Название фильма
         public string? MovieTitle { get; set; }
@@ -19,5 +22,11 @@ namespace MovieApplication.Models
 
         // Навигационное свойство для связи с жанрами
         public ICollection<MovieGenre> MovieGenres { get; set; } = new List<MovieGenre>();
+
+        // Свойство для выбранных жанров
+
+        [NotMapped] // Игнорирование в базе данных
+        [Display(Name = "Genres")]
+        public List<int> SelectedGenres { get; set; } = new List<int>();
     }
 }

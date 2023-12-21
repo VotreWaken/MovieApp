@@ -7,7 +7,11 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <input type="hidden" asp-for="Id" />
         <label asp-for="FilmImage" class="control-label">Film Image</label>
-        <input asp-for="FilmImage" class="form-control" />
+                <!-- Поле для отображения/редактирования пути к файлу -->
+                <input id="filmImageInput" asp-for="FilmImage" class="form-control" />
+
+                <!-- Поле для загрузки файла -->
+                <input id="fileUploadInput" type="file" name="fileUpload" class="form-control" />
         </div>
         <div class="filmContent">
             <h1 class="filmContentTitle">@Html.DisplayFor(model => model.Id). @Html.DisplayFor(model => model.MovieTitle)</h1>
@@ -17,12 +21,12 @@
             <input asp-for="MovieDescription" class="form-control" />
             <label asp-for="Director" class="control-label">Director</label>
             <input asp-for="Director" class="form-control" />
-            <div class="genre-buttons">
-                <div class="form-group">
-                    <label asp-for="MovieGenres" class="control-label">Genres</label>
-                    <select asp-for="MovieGenres" asp-items="@(new SelectList(ViewBag.AllGenres, "Id", "GenreName"))" class="form-control" multiple id="genreSelect"></select>
+                <div class="genre-buttons">
+                    <div class="form-group">
+                        <label asp-for="SelectedGenres" class="control-label">Genres</label>
+                        <select asp-for="SelectedGenres" asp-items="@(new SelectList(ViewBag.AllGenres, "Id", "GenreName"))" class="form-control" multiple id="genreSelect" name="SelectedGenres"></select>
+                    </div>
                 </div>
-            </div>
             <label asp-for="ProductionDate" class="control-label">Production Date</label>
             <input asp-for="ProductionDate" class="form-control" type="date" />
         </div>
@@ -32,6 +36,7 @@
         <button type="reset" class="EditDeclineBtn">Decline</button>
     </div>
 </form>
+    <input type="hidden" asp-for="SelectedGenres" id="selectedGenres" name="SelectedGenres" />
 </div>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -39,23 +44,26 @@
     $(document).ready(function () {
         // Получите ссылку на ваш список выбора
         var genreSelect = $('#genreSelect');
-        var selectedGenresInput = $('#selectedGenres');
 
         // Обработка изменений в списке выбора
         genreSelect.change(function () {
-            // Создайте массив для хранения выбранных значений
-            var selectedGenres = [];
-
-            // Переберите все выбранные элементы и добавьте их в массив
-            genreSelect.find(':selected').each(function () {
-                selectedGenres.push($(this).val());
-            });
-
-            // Обновите значение скрытого поля
-            selectedGenresInput.val(selectedGenres.join(','));
-
             // Выведите выбранные значения в консоль (замените эту часть вашим кодом)
-            console.log(selectedGenres);
+            console.log(genreSelect.val());
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var filmImageInput = document.getElementById('filmImageInput');
+        var fileUploadInput = document.getElementById('fileUploadInput');
+
+        fileUploadInput.addEventListener('change', function () {
+            var fileName = fileUploadInput.value.split('\\').pop(); // Получаем имя файла из пути
+
+            // Формируем новый путь к файлу
+            var newPath = "/img/MyTop/" + fileName;
+
+            // Устанавливаем новый путь в первое поле
+            filmImageInput.value = newPath;
         });
     });
 </script>
