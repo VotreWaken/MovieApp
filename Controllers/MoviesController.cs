@@ -11,9 +11,11 @@ namespace MovieApplication.Controllers
     {
         private readonly ILogger<MoviesController> _logger;
         MovieContext db;
-        public MoviesController(MovieContext context)
+        private readonly IWebHostEnvironment _appEnvironment;
+        public MoviesController(MovieContext context, IWebHostEnvironment appEnvironment)
         {
             db = context;
+            _appEnvironment = appEnvironment;
         }
         // GET: Students/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -81,6 +83,54 @@ namespace MovieApplication.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie, IFormFile fileUpload)
+        {
+            ViewBag.AllGenres = db.Genre.ToList();
+            if (ModelState.IsValid && fileUpload.Length > 0)
+            {
+                if (fileUpload != null && fileUpload.Length > 0)
+                {
+                    //Check upload file extension
+                    string ext = fileUpload.ContentType.ToLower();
+                    if (ext != "image/jpg" &&
+                        ext != "image/jpeg" &&
+                        ext != "image/bmp" &&
+                        ext != "image/pjpeg" &&
+                        ext != "image/gif" &&
+                        ext != "image/x-png" &&
+                        ext != "image/png")
+                    {
+                        ModelState.AddModelError("", "Неверное расширение файла! Выберите другой файл.");
+                        return View(movie);
+                    }
+
+                    string path = "/img/" + fileUpload.FileName;
+
+                    using (FileStream filestream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                        await fileUpload.CopyToAsync(filestream);
+                    movie.FilmImage = path;
+                }
+                db.Add(movie);
+                await db.SaveChangesAsync(); // Сохраняем изменения, чтобы movie.Id получил свое значение
+
+                var selectedGenres = movie.SelectedGenres;
+
+                // Добавить связи жанра
+                foreach (var genreId in selectedGenres)
+                {
+                    db.MovieGenre.Add(new MovieGenre { MovieId = movie.Id, GenreId = genreId });
+                }
+
+                await db.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+            return View(movie);
+        }
+
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -103,7 +153,7 @@ namespace MovieApplication.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie, IFormFile? fileUpload)
         {
             if (id != movie.Id)
             {
@@ -123,6 +173,36 @@ namespace MovieApplication.Controllers
                     foreach (var genreId in selectedGenres)
                     {
                         db.MovieGenre.Add(new MovieGenre { MovieId = id, GenreId = genreId });
+                    }
+
+                    if (fileUpload != null && fileUpload.Length > 0)
+                    {
+                        //Check upload file extension
+                        string ext = fileUpload.ContentType.ToLower();
+                        if (ext != "image/jpg" &&
+                            ext != "image/jpeg" &&
+                            ext != "image/bmp" &&
+                            ext != "image/pjpeg" &&
+                            ext != "image/gif" &&
+                            ext != "image/x-png" &&
+                            ext != "image/png")
+                        {
+                            ModelState.AddModelError("", "Неверное расширение файла! Выберите другой файл.");
+                            return View(movie);
+                        }
+
+                        string path = "/img/" + fileUpload.FileName;
+
+                        using (FileStream filestream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                            await fileUpload.CopyToAsync(filestream);
+                        movie.FilmImage = path;
+                    }
+                    else
+                    {
+                        IQueryable<string> oldPath = from _movie in db.Movie
+                                                     where _movie.Id == movie.Id
+                                                     select _movie.FilmImage;
+                        movie.FilmImage = oldPath.First();
                     }
 
                     db.Update(movie);
@@ -149,6 +229,48 @@ namespace MovieApplication.Controllers
         {
             return db.Movie.Any(e => e.Id == id);
         }
+
+        // Delete Method 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            Movie? movie = await db.Movie
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (movie == null)
+                return NotFound();
+
+            return View(movie);
+        }
+
+        // POST: Movies/Delete/Id
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            // Находим фильм по id
+            Movie? movie = await db.Movie.FindAsync(id);
+
+            if (movie == null)
+                return NotFound();
+
+            // Находим все записи MovieGenre связанные с удаляемым фильмом
+            var movieGenresToDelete = db.MovieGenre.Where(mg => mg.MovieId == id);
+
+            // Удаляем эти записи из контекста
+            db.MovieGenre.RemoveRange(movieGenresToDelete);
+
+            // Удаляем фильм
+            db.Movie.Remove(movie);
+
+            // Сохраняем изменения
+            await db.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
         public IActionResult Privacy()
         {

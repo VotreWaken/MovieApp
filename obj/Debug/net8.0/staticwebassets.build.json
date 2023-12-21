@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vtbL8OKEbX0FbgCdgQmUgTJpLxr0FX387t8YF6O60Rw=",
+  "Hash": "Ju6bnz1QnapFaiGixDgXavheFyvoWpmBmTk9jvDROl0=",
   "Source": "MovieApplication",
   "BasePath": "_content/MovieApplication",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\avatar553076391.jpg",
+      "SourceId": "MovieApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\",
+      "BasePath": "_content/MovieApplication",
+      "RelativePath": "img/avatar553076391.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\avatar553076391.jpg"
     },
     {
       "Identity": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\Header\\Avatar.jpeg",
@@ -661,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\MyTop\\Vertigo.png"
+    },
+    {
+      "Identity": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\photo1698257138.jpeg",
+      "SourceId": "MovieApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\",
+      "BasePath": "_content/MovieApplication",
+      "RelativePath": "img/photo1698257138.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\photo1698257138.jpeg"
     },
     {
       "Identity": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\MyTop.js",

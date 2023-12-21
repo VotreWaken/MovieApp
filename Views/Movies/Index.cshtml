@@ -31,8 +31,13 @@
                             </div>
                         </h3>
                         <h4 class="filmContentProductionDate">Production Date: @movie.ProductionDate.ToString("yyyy")</h4>
+                    <div class="filmEditDeleteButtons">
                     <a asp-action="Edit" asp-route-id="@movie.Id" class="filmContentEditBtn">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@movie.Id" class="filmContentEditBtn">Delete</a>
+                        <form class="formButton" asp-action="Delete" method="post">
+                        <input type="hidden" name="id" value="@movie.Id" />
+                        <button type="submit" class="filmContentDeleteBtn">Delete</button>
+                    </form>
+                    </div>
                     </div>
                 </div>
             }

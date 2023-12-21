@@ -483,6 +483,11 @@ span {
     }
 }
 
+.filmEditDeleteButtons {
+    display: flex;
+    align-items: baseline;
+}
+
 .filmContentEditBtn {
     background: #13141C;
     border-radius: 20px;
@@ -490,6 +495,10 @@ span {
     width: 20%;
     height: 10%;
     font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
     .filmContentEditBtn:hover {
@@ -536,4 +545,27 @@ span {
     width: 20%;
     height: 40px;
     margin: 30px;
+}
+
+
+/* Buttons Delete & Edit */
+.formButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.filmContentDeleteBtn {
+    width: 100%;
+    height: 40%;
+    background: #13141C;
+    border-radius: 20px;
+    margin: 40px 0px 20px 0px;
+    height: 10%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
