@@ -133,16 +133,20 @@
       "PackagePath": "staticwebassets\\img\\MyTop\\Vertigo.png"
     },
     {
-      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\avatar553076391.jpg",
-      "PackagePath": "staticwebassets\\img\\avatar553076391.jpg"
-    },
-    {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\img\\photo1698257138.jpeg",
       "PackagePath": "staticwebassets\\img\\photo1698257138.jpeg"
     },
     {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\MyTop.js",
       "PackagePath": "staticwebassets\\js\\MyTop.js"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\Slider\\itc-slider.css",
+      "PackagePath": "staticwebassets\\js\\Slider\\itc-slider.css"
+    },
+    {
+      "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\Slider\\itc-slider.js",
+      "PackagePath": "staticwebassets\\js\\Slider\\itc-slider.js"
     },
     {
       "Id": "D:\\cprojects\\MovieApplication\\MovieApplication\\wwwroot\\js\\site.js",
