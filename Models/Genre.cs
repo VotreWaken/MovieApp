@@ -2,12 +2,13 @@
 {
     public class Genre
     {
-        // Идентификатор жанра
+        // Id Genre
         public int Id { get; set; }
-        // Название жанра
+
+        // Genre Name
         public string? GenreName { get; set; }
 
-        // Навигационное свойство для связи с фильмами
+        // Navigation Property to Link to Movies
         public ICollection<MovieGenre> MovieGenres { get; set; } = new List<MovieGenre>();
     }
 }

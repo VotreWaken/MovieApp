@@ -1,17 +1,18 @@
 ﻿@model MovieApplication.Models.Movie;
+
 <!-- Right Bar Section -->
 <div class="rightBar" id="rightBar">
 
-    <!-- Create Form Section -->
+    <!-- Create Form Section ( Controller Create Action using Post Method With Sending Image Data ) -->
     <form asp-action="Create" method="post" enctype="multipart/form-data">
 
-        <!-- Film Item Section -->
+        <!-- Movie Item Section -->
         <div class="filmItem">
 
-            <!-- Film Image Information -->
+            <!-- Movie Image Information -->
             <div class="filmItemImage">
 
-                <!-- Film Image -->
+                <!-- Movie Image -->
                 <img draggable="false" src="@Html.DisplayFor(model => model.FilmImage)" width="300" alt="img" />
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
                 <input type="hidden" asp-for="Id" />
@@ -24,59 +25,87 @@
                 <input id="fileUploadInput" type="file" name="fileUpload" class="form-control" />
             </div>
 
-            <!-- Film Content Information -->
+            <!-- Movie Content Information -->
             <div class="filmContent">
 
+                <!-- Movie Content Title Information -->
                 <span asp-validation-for="MovieTitle" class="text-info"></span>
                 <label asp-for="MovieTitle" class="control-label">Title</label>
                 <input asp-for="MovieTitle" class="form-control" />
 
+                <!-- Movie Content Description Information -->
                 <span asp-validation-for="MovieDescription" class="text-info"></span>
                 <label asp-for="MovieDescription" class="control-label">Description</label>
                 <input asp-for="MovieDescription" class="form-control" />
 
+                <!-- Movie Content Director Information -->
                 <span asp-validation-for="Director" class="text-info"></span>
                 <label asp-for="Director" class="control-label">Director</label>
                 <input asp-for="Director" class="form-control" />
 
+                <!-- Movie Content Genre Information -->
                 <div class="genre-buttons">
                     <div class="form-group">
                         <label asp-for="SelectedGenres" class="control-label">Genres</label>
                         <select asp-for="SelectedGenres" asp-items="@(new SelectList(ViewBag.AllGenres, "Id", "GenreName"))" class="form-control" multiple id="genreSelect" name="SelectedGenres"></select>
                     </div>
                 </div>
+
+                <!-- Movie Content Production Date Information -->
                 <span asp-validation-for="ProductionDate" class="text-info"></span>
                 <label asp-for="ProductionDate" class="control-label">Production Date</label>
                 <input asp-for="ProductionDate" class="form-control" type="date" />
+
             </div>
+
         </div>
+
+        <!-- Create Movie Submit Action -->
         <div class="buttons">
             <button type="submit" class="EditConfirmBtn">Confirm</button>
             <button type="reset" class="EditDeclineBtn">Decline</button>
         </div>
+
     </form>
+
+    <!-- Hidden Input Using To Pass Values of Selected Genres To Controller -->
+    <!-- Before That Javascript using Jquery Create Array of That Selected Genres Value -->
     <input type="hidden" asp-for="SelectedGenres" id="selectedGenres" name="SelectedGenres" />
 </div>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+
 <script>
-    $(document).ready(function () {
-        // Получите ссылку на ваш список выбора
+    // Pass Values of Selected Genres To Controller
+
+    // When Document Ready 
+    $(document).ready(function () 
+    {
+
+        // Get Reference To List of Choosen Genres
         var genreSelect = $('#genreSelect');
 
-        // Обработка изменений в списке выбора
-        genreSelect.change(function () {
-            // Выведите выбранные значения в консоль (замените эту часть вашим кодом)
+        // Selected Genres Handler
+        genreSelect.change(function () 
+        {
+            // Display Selected Genres to Console
             console.log(genreSelect.val());
         });
+
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
+    // 
+    document.addEventListener('DOMContentLoaded', function () 
+    {
+        // 
         var filmImageInput = document.getElementById('filmImageInput');
         var fileUploadInput = document.getElementById('fileUploadInput');
         var filmImage = document.querySelector('.filmItemImage img');
 
-        fileUploadInput.addEventListener('change', function () {
+        // 
+        fileUploadInput.addEventListener('change', function () 
+        {
+            // 
             var file = fileUploadInput.files[0];
             var fileName = fileUploadInput.value.split('\\').pop(); // Получаем имя файла из пути
 
@@ -88,21 +117,21 @@
             if (file) {
                 var reader = new FileReader();
 
-                reader.onload = function (e) {
+                reader.onload = function (e) 
+                {
                     // Устанавливаем данные URL в src элемента изображения
                     filmImage.src = e.target.result;
                 };
 
-                // Читаем файл как данные URL
+                // Read File Data As URL
                 reader.readAsDataURL(file);
             }
         });
     });
-
 </script>
 
 
-
+<!-- Validation Scripts -->
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

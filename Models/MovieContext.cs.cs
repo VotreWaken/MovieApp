@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MovieApplication.Models
 {
@@ -19,13 +21,23 @@ namespace MovieApplication.Models
             //}
         }
 
+        // Configures the MovieGenre Entity in a Database Context.
+        /* 
+           Tells Entity Framework Core how to Properly set up a Table to Store a 
+           many-to-many Relationship Between the Movie and Genre Entities via the 
+           MovieGenre Staging Table.
+        */
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            // Defines a Composite Key for the Table Corresponding to the MovieGenre Entity
+            // the Table will have a Composite Key Consisting of Two Columns 
+            // MovieId and GenreId ( Many to Many )
             modelBuilder.Entity<MovieGenre>()
                 .HasKey(e => new { e.MovieId, e.GenreId });
 
-            // Другие конфигурации...
-
+            // Passes Control to the Underlying Implementation of the 
+            // OnModelCreating Method to the Parent Class
             base.OnModelCreating(modelBuilder);
         }
 
