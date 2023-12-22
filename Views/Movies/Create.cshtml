@@ -74,8 +74,10 @@
     document.addEventListener('DOMContentLoaded', function () {
         var filmImageInput = document.getElementById('filmImageInput');
         var fileUploadInput = document.getElementById('fileUploadInput');
+        var filmImage = document.querySelector('.filmItemImage img');
 
         fileUploadInput.addEventListener('change', function () {
+            var file = fileUploadInput.files[0];
             var fileName = fileUploadInput.value.split('\\').pop(); // Получаем имя файла из пути
 
             // Формируем новый путь к файлу
@@ -83,6 +85,17 @@
 
             // Устанавливаем новый путь в первое поле
             filmImageInput.value = newPath;
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Устанавливаем данные URL в src элемента изображения
+                    filmImage.src = e.target.result;
+                };
+
+                // Читаем файл как данные URL
+                reader.readAsDataURL(file);
+            }
         });
     });
 
