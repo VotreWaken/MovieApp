@@ -83,9 +83,16 @@ namespace MovieApplication.Controllers
             return View();
         }
 
+
+        public IActionResult Create()
+        {
+            ViewBag.AllGenres = db.Genre.ToList();
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie, IFormFile fileUpload)
+        public async Task<IActionResult> Create([Bind("MovieTitle,MovieDescription,FilmImage,Director,ProductionDate,SelectedGenres")] Movie movie, IFormFile fileUpload)
         {
             ViewBag.AllGenres = db.Genre.ToList();
             if (ModelState.IsValid && fileUpload.Length > 0)

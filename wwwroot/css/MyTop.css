@@ -8,13 +8,6 @@
     .leftBar {
         background: transparent;
         width: 10%;
-        &.fixed__nav {
-    background: green;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 111;
-    }
 
 }
 
